@@ -1,0 +1,100 @@
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+}
+
+/* Заголовки */
+.home-section h2 {
+  color: #ff944d;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Текст Про нас */
+.about-section p {
+  font-size: 17px;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 0 20px;
+}
+
+/* Відступ між блоком "Про нас" та картинками */
+.image-cards-section {
+  margin-top: 40px; /* Відступ між текстом і картинками */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Картка для кожної картинки */
+.image-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 320px;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-text {
+  padding: 15px;
+}
+
+.card-text h3 {
+  color: #ffaa5c;
+  margin-bottom: 8px;
+}
+
+.card-text p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Заголовок + кнопка */
+.highlight-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.highlight-section h2 {
+  color: #ff944d;
+  margin-bottom: 20px;
+}
+
+.action-button {
+  background-color: #ffaa5c;
+  color: #fff;
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #ff8c42;
+}
+
+/* ✅ Адаптивність */
+/* 
+  Прибираємо цей блок, щоб картинки не ставали в колонку,
+  а залишались в рядку і гнучко зменшувались.
+*/
+/* @media (max-width: 1000px) {
+  .image-cards-section {
+    flex-direction: column; 
+    align-items: center;
+  }
+} */

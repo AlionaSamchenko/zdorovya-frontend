@@ -1,0 +1,106 @@
+@import './DietsPage.css';
+
+.calculator-container-with-images {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.side-image {
+  flex: 1;
+  object-fit: cover;
+  border-radius: 8px;
+  align-self: stretch;
+  max-width: 240px;
+}
+
+.calculator-container {
+  flex-grow: 1;
+  max-width: 900px;
+  flex: 2;
+  padding: 20px;
+  color: #333;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.calculator-title {
+  text-align: center;
+  color: #ff944d;
+  margin-bottom: 15px;
+}
+
+.calculator-info {
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.calculator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.calculator-form label {
+  font-weight: 600;
+}
+
+.calculator-form input,
+.calculator-form select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.calculate-button {
+  margin-top: 8px;
+  background-color: #ffaa5c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calculate-button:hover {
+  background-color: #ff8c42;
+}
+
+.result-block {
+  margin-top: 20px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.result-block h3 {
+  margin-bottom: 8px;
+  color: #ffaa5c;
+}
+
+.back-button {
+  margin-top: 20px;
+  background-color: #ffaa5c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ff8c42;
+}
+
+

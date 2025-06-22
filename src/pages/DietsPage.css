@@ -1,0 +1,94 @@
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffaa5c;          
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.diet-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.diet-nav a {
+  background-color: #ffaa5c;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.diet-nav a:hover {
+  background-color: #ff8c42;
+  transform: translateY(-2px);
+}
+
+/* Секції дієт */
+.diet-section {
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ffaa5c;
+}
+
+.diet-section:last-of-type {
+  border-bottom: none;
+}
+
+/* Заголовки секцій */
+.diet-section h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+/* Текст секцій */
+.diet-section p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .diet-nav a {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .diet-title {
+    font-size: 28px;
+  }
+
+  .diet-section h2 {
+    font-size: 20px;
+  }
+}
+
+.diet-section ul {
+  padding-left: 20px; 
+  margin-top: 10px;   
+}
+
+.diet-section ul li {
+  margin-bottom: 8px; 
+  line-height: 1.5;   
+}
+
+.diet-image {
+  display: block;
+  margin: 0 auto 15px auto;
+  width: 500px;       /* ширина */
+  height: 300px;      /* висота */
+  object-fit: cover;  /* щоб зображення не спотворювалось, а обрізалось за потреби */
+  border-radius: 8px;
+}
+
+
+

@@ -1,0 +1,148 @@
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffaa5c;          
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Навигация по разделам */
+.activity-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.activity-nav a {
+  background-color: #ffaa5c;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.activity-nav a:hover {
+  background-color: #ff8c42;
+  transform: translateY(-2px);
+}
+
+/* Секции активности */
+.activity-section {
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ffaa5c;
+}
+
+.activity-section:last-of-type {
+  border-bottom: none;
+}
+
+/* Заголовки секций */
+.activity-section h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* Текст секций */
+.activity-section p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Список упражнений */
+.exercise-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.exercise-list li {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Центрирование картинок и ограничение по размеру */
+.exercise-image {
+  display: block;
+  margin: 12px auto 24px auto;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Кнопка "На головну" */
+.back-button {
+  display: block;
+  margin: 40px auto 0 auto;
+  padding: 12px 24px;
+  background-color: #ffaa5c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  max-width: 200px;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: #ff8c42;
+  transform: translateY(-2px);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .activity-nav a {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .activity-section h2 {
+    font-size: 18px;
+  }
+
+  .exercise-list li {
+    font-size: 14px;
+  }
+
+  .exercise-image {
+    max-width: 100%;
+  }
+}
+
+.exercise-image {
+  display: block;
+  margin: 0 auto 15px auto;
+  width: 500px;       /* ширина */
+  height: 300px;      /* висота */
+  object-fit: cover;  /* щоб зображення не спотворювалось, а обрізалось за потреби */
+  border-radius: 8px;
+}
+
+.exercise-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 12px;
+}
