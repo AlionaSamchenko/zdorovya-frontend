@@ -71,6 +71,36 @@
   }
 }
 
+@media (max-width: 700px) {
+  .page-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .diet-nav {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .diet-nav a {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+  .diet-section {
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+  }
+  .diet-section h2 {
+    font-size: 16px;
+  }
+  .diet-section p, .diet-section ul li {
+    font-size: 13px;
+  }
+  .diet-image {
+    width: 98vw;
+    height: 120px;
+    object-fit: contain;
+  }
+}
+
 .diet-section ul {
   padding-left: 20px; 
   margin-top: 10px;   

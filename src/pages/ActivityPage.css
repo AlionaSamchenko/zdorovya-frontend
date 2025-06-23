@@ -130,6 +130,41 @@
   }
 }
 
+@media (max-width: 700px) {
+  .page-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .activity-nav {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .activity-nav a {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+  .activity-section {
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+  }
+  .activity-section h2 {
+    font-size: 15px;
+  }
+  .activity-section p, .exercise-list li {
+    font-size: 13px;
+  }
+  .exercise-image {
+    width: 98vw;
+    height: 120px;
+    object-fit: contain;
+  }
+  .back-button {
+    font-size: 14px;
+    padding: 8px 0;
+    max-width: 98vw;
+  }
+}
+
 .exercise-image {
   display: block;
   margin: 0 auto 15px auto;

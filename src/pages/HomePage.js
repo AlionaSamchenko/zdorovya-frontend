@@ -1,7 +1,10 @@
 import React from 'react';
 import './HomePage.css';
+import { useNavigate } from 'react-router-dom';
 
 function HomePage() {
+  const navigate = useNavigate();
+
   return (
     <div className="home-container">
 
@@ -47,7 +50,7 @@ function HomePage() {
       {/* 3. Заголовок + кнопка */}
       <section className="highlight-section">
         <h2>Зроби перший крок до здорового життя вже сьогодні!</h2>
-        <button className="action-button" onClick={() => window.location.href='/calculatorpage'}>
+        <button className="action-button" onClick={() => navigate('/calculatorpage')}>
           Почнемо зараз
         </button>
       </section>

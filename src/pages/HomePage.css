@@ -98,3 +98,32 @@
     align-items: center;
   }
 } */
+
+@media (max-width: 700px) {
+  .home-container {
+    padding: 8px;
+  }
+  .about-section p {
+    font-size: 15px;
+    margin: 0 5px;
+  }
+  .image-cards-section {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .image-card {
+    max-width: 95vw;
+    min-width: 0;
+    margin: 0 auto;
+  }
+  .highlight-section h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .action-button {
+    width: 90vw;
+    font-size: 15px;
+    padding: 10px 0;
+  }
+}
