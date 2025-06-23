@@ -96,27 +96,28 @@
   }
   .diet-image {
     width: 98vw;
+    max-width: 98vw;
     height: 120px;
     object-fit: contain;
   }
 }
 
-.diet-section ul {
-  padding-left: 20px; 
-  margin-top: 10px;   
+.diet-section ul, .diet-section li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
 }
 
 .diet-section ul li {
-  margin-bottom: 8px; 
-  line-height: 1.5;   
+  margin-bottom: 8px;
 }
 
 .diet-image {
   display: block;
   margin: 0 auto 15px auto;
-  width: 500px;       /* ширина */
-  height: 300px;      /* висота */
-  object-fit: cover;  /* щоб зображення не спотворювалось, а обрізалось за потреби */
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
   border-radius: 8px;
 }
 
