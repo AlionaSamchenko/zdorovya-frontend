@@ -17,7 +17,7 @@ function WaterBalancePage() {
       return;
     }
 
-    fetch('http://localhost:5000/calculate/water-need', {
+    fetch('https://zdorovya-backend.onrender.com/calculate/water-need', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ weight, activity }),
@@ -38,7 +38,7 @@ function WaterBalancePage() {
   };
 
   const addWater = (amount) => {
-    fetch('http://localhost:5000/calculate/update-water', {
+    fetch('https://zdorovya-backend.onrender.com/calculate/update-water', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

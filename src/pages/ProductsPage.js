@@ -21,7 +21,7 @@ function ProductsPage() {
   const [showResults, setShowResults] = useState(false);
 
   const fetchProducts = useCallback(() => {
-    const url = `http://localhost:5000/protucts?page=${currentPage}&search=${searchQuery}`;
+    const url = `https://zdorovya-backend.onrender.com/protucts?page=${currentPage}&search=${searchQuery}`;
     fetch(url)
       .then(response => response.json())
       .then(data => {
@@ -59,7 +59,7 @@ function ProductsPage() {
       вечеря: selections.вечеря.map(p => p._id),
     };
 
-    fetch('http://localhost:5000/protucts/calculate', {
+    fetch('https://zdorovya-backend.onrender.com/protucts/calculate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ selections: selectionsWithIds }),
