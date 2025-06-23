@@ -20,7 +20,7 @@ function CalculatorPage() {
       return;
     }
 
-    fetch('https://zdorovya-backend.onrender.com/calculate/calories-bju', {
+    fetch(`${process.env.REACT_APP_API_URL}/calculate/calories-bju`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ gender, age, height, weight, activity }),
@@ -46,7 +46,7 @@ function CalculatorPage() {
       return;
     }
 
-    fetch('https://zdorovya-backend.onrender.com/calculate/bmi', {
+    fetch(`${process.env.REACT_APP_API_URL}/calculate/bmi`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ height, weight }),
